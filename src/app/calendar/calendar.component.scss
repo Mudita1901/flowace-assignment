@@ -1,0 +1,89 @@
+@import "../../../node_modules/angular-calendar/css/angular-calendar.css";
+
+.container {
+  position: absolute;
+  width: 320px;
+  height: 944px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 16px 16px 0px;
+}
+
+.profile-container {
+  right: 0%;
+  top: 24px;
+  bottom: 0%;
+}
+
+.image {
+  position: absolute;
+  left: 18px;
+  top: 0%;
+}
+
+.name {
+  width: 134px;
+  height: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: -9%;
+  letter-spacing: 0.15px;
+  margin-bottom: 0%;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.email {
+  width: 119px;
+  height: 16px;
+  margin-top: 0px;
+  font-family: "Roboto";
+  margin-left: -17%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.month {
+  position: absolute;
+  top: 0%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: 0.15px;
+
+  /* Text/High Emphasis */
+
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.entries {
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  
+  /* identical to box height, or 133% */
+
+  letter-spacing: 0.25px;
+
+  /* Text/Medium Emphasis */
+
+  color: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,74 @@
+<mat-grid-list cols="4" rowHeight="100%">
+  <mat-grid-tile [colspan]="1">
+    <mat-sidenav-container class="container" width="100%">
+      <mat-grid-list cols="4" rowHeight="23px" class="profile-container">
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+          <img src="../../assets/User02.svg" class="image" />
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <h5 class="name">Dibyansu Mohanty</h5>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <h5 class="email">dibyansu@flowace.in</h5>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+          <img
+            src="../../assets/arrow.svg"
+            class="image"
+            style="margin-left: 20px; cursor: pointer"
+          />
+        </mat-grid-tile>
+      </mat-grid-list>
+      <mat-grid-list cols="3" rowHeight="23px" style="top: 2%">
+        <mat-grid-tile [colspan]="1">
+          <img
+            src="../../assets/arrow-square-left.svg"
+            class="image"
+            style="cursor: pointer"
+            mwlCalendarPreviousView
+            [view]="view"
+            [(viewDate)]="viewDate"
+          />
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1">
+          <h3 class="month">
+            {{ viewDate | calendarDate: view + "ViewTitle":"en" }}
+          </h3>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1">
+          <img
+            src="../../assets/arrow-right.svg"
+            class="image"
+            style="margin-left: 40%; cursor: pointer"
+            mwlCalendarNextView
+            [view]="view"
+            [(viewDate)]="viewDate"
+          />
+        </mat-grid-tile>
+      </mat-grid-list>
+      <mat-grid-list cols="1" rowHeight="25px" style="top: 5%; align-items: flex-start;">
+        <mat-grid-tile>
+          <h6 class="entries" style="margin-left: -75%;">Entries</h6>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-checkbox style="margin-left: -40%;" color={colors.blue}>
+            Classified Entries
+          </mat-checkbox>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-checkbox style="margin-left: -35%;">
+              Unclassified Entries
+            </mat-checkbox>
+          </mat-grid-tile>
+      </mat-grid-list>
+    </mat-sidenav-container>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="3">
+    <mwl-calendar-month-view
+      [viewDate]="viewDate"
+      style="width: 100%; height: 100%"
+      [events]="events"
+    >
+    </mwl-calendar-month-view>
+  </mat-grid-tile>
+</mat-grid-list>
